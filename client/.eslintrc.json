@@ -1,0 +1,36 @@
+{
+    "env": {
+        "es6":true,
+        "node":true
+    },
+    "plugins": [
+        "css-modules", "prettier"
+    ],
+    "extends": ["eslint:recommended","plugin:react/recommended", "plugin:prettier/recommended" ],
+    "settings": {
+        "react": {
+            "version":"17.02"
+        }
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "globals":{
+        "module":true,
+        "window": true,
+        "localStorage":true,
+        "document":true,
+        "alert":true
+
+    },
+    "rules": {
+        "eqeqqeq":[0],
+        "no-var": "error",
+        "require-await": "error"
+    }
+
+}
