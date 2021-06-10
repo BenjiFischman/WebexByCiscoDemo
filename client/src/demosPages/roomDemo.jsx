@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Input from '../components/input';
-import Auth from '../components/auth';
-import Status from '../components/status';
-import Room from '../components/room';
+import Input from '../components/Input';
+import Auth from '../components/Auth';
+import Status from '../components/Status';
+import Room from '../components/Room';
 
 const RoomDemo = ({webex}) => {
 

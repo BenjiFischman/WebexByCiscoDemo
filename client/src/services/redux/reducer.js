@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux';
 
-import {AuthReducer} from './logOn';
+import {AuthReducer} from './authReducer';
 import {InputReducer} from './input';
 
 const baseReducer = combineReducers({
