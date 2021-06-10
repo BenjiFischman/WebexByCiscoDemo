@@ -5,7 +5,7 @@ The aim of this project is to demonstrate the power of Webex by Cisco. For demo 
 
 For example, the Room Demo is meant to be the first of many instances of showcasing how to use the Webex by Cisco browser SDK in an early stages mobile first React appplication. 
 
-To be sure, [react-widgets](https://github.com/webex/react-widgets) and spaces are one option for developers working in React using very similar technologies (i.e., React, Redux, browser SDK). As the web accelerates toward critical infelction points it is important to give developers the freedom the choose, which is why tools like TypeScript, eslint, prettier, stylelint, babel, and custom build tooling with webpack are included out of the box.  
+To be sure, [react-widgets](https://github.com/webex/react-widgets) and spaces are one option for developers working in React using very similar technologies (i.e., React, Redux, browser SDK). As the web accelerates toward critical infelction points it is important to give developers the freedom the choose, which is why tools like TypeScript, eslint, prettier, stylelint, babel, and custom build tooling with webpack are included out of the box.
 
 ## Structure & Content
 | File/folder       | Description                                        |
@@ -26,6 +26,12 @@ To be sure, [react-widgets](https://github.com/webex/react-widgets) and spaces a
 * Conforms to [Webex code style guides](https://github.com/webex/web-styleguide).
 * Github Action deployment.
 * Protect yo secrets with example env configuration!
+
+
+### Try it Out!
+* Step 1) Navigate to the root of the client folder
+* Step 2) npm install
+* Step 3) npm run dev (local dev run time)
 
 ## Next Steps & Future Work
 
