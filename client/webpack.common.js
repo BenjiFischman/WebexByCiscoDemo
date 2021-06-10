@@ -7,7 +7,7 @@ module.exports = {
     output: { path: path.join(__dirname, "dist"), filename: "bundle.js" },
     resolve: {
     //All flavors are welcome!
-      extensions: [".tsx", ".ts", ".js",".jsx"],
+      extensions: [".tsx", ".ts", ".js",".jsx", ""],
       //Client Side Browser App with PWA functionality in mind for future work, so lets not assume much 
       fallback: {
         "fs": false,
