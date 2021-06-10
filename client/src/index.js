@@ -4,6 +4,12 @@ import {Provider} from 'react-redux';
 import {PersistGate} from 'redux-persist/integration/react';
 
 import {store, persistor} from './store';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useParams
+} from "react-router-dom";
 import App from './App.tsx';
 import './styles.css';
 
@@ -33,10 +39,12 @@ const webex = window.Webex.init({
 });
 // Attach the React application to the DOM with some tools.
 ReactDOM.render(
+  <Router>
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
       <App webex={webex} />
     </PersistGate>
-  </Provider>,
+  </Provider>
+  </Router>,
   document.getElementById('root')
 );
