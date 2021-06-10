@@ -1,17 +1,11 @@
-import { combineReducers } from 'redux';
+import {combineReducers} from 'redux';
 
-import { AuthReducer } from './LogOn';
-
-import { EmailReducer } from './EmailInput';
-
-import { TitleReducer } from './TitleInput';
-
-export const PersistReduxStates = [AuthReducer];
+import {AuthReducer} from './logOn';
+import {InputReducer} from './input';
 
 const baseReducer = combineReducers({
-  AuthReducer,
-  EmailReducer,
-  TitleReducer,
+  InputReducer,
+  AuthReducer
 });
 
 export default baseReducer;

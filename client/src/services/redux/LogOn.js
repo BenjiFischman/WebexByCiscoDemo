@@ -1,8 +1,8 @@
-import { ActionTypes } from './actionTypes';
+import {ActionTypes} from './actionTypes';
 import createReducer from './utilReducer';
 
 const initialState = {
-  loggedOn: false,
+  loggedOn: false
 };
 
 export const AuthReducer = createReducer(
@@ -12,7 +12,7 @@ export const AuthReducer = createReducer(
       action /* eslint-disable-line no-unused-vars */
     ) => {
       state.loggedOn = action.Auth;
-    },
+    }
   },
   initialState
 );

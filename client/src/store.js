@@ -1,13 +1,14 @@
-import { createStore, applyMiddleware } from 'redux';
-import { persistStore, persistReducer } from 'redux-persist'; // imports from redux-persist
+import {createStore, applyMiddleware} from 'redux';
+import {persistStore, persistReducer} from 'redux-persist'; // imports from redux-persist
 import storage from 'redux-persist/lib/storage'; // defaults to localStorage for web
 import thunkMiddleware from 'redux-thunk';
+
 import rootReducer from './services/redux/reducer';
 
 const persistConfig = {
   // configuration object for redux-persist
   key: 'root',
-  storage, // define which storage to use
+  storage // define which storage to use, local storage works for this example
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer); // create a persisted reducer
@@ -17,12 +18,6 @@ const store = createStore(
   applyMiddleware(thunkMiddleware) // add any middlewares here
 );
 
-const persistor = persistStore(store); // used to create the persisted store, persistor will be used in the next step
+const persistor = persistStore(store); // Persist the store, see index.js to see the next step
 
-export { store, persistor };
-
-// const composedEnhancer = applyMiddleware(thunkMiddleware);
-
-// // The store now has the ability to accept thunk functions in `dispatch`
-// const store = createStore(rootReducer, composedEnhancer);
-// export default store;
+export {store, persistor};

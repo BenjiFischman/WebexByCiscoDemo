@@ -13,7 +13,7 @@
         "sourceMap": true,
         "allowSyntheticDefaultImports": true,
         "strict": true,
-        "forceConsistentCasingInFileNames": true,
+        "forceConsistentCasingInFileNames": false,
         "noFallthroughCasesInSwitch": true,
         "module": "esnext",
         "moduleResolution": "node",
@@ -24,7 +24,7 @@
         "typeRoots": ["node_modules/@types"]
     },
     "include": [
-        "client/dist/src"
+        "src"
     ],
     "exclude": [
         "node_modules"

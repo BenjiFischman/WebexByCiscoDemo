@@ -6,10 +6,10 @@
     "plugins": [
         "css-modules", "prettier"
     ],
-    "extends": ["eslint:recommended","plugin:react/recommended", "plugin:prettier/recommended" ],
+    "extends": ["@webex/eslint-config-base", "@webex/eslint-config-react" ],
     "settings": {
         "react": {
-            "version":"17.02"
+            "version":"16.8.0"
         }
     },
     "parserOptions": {
@@ -28,9 +28,30 @@
 
     },
     "rules": {
-        "eqeqqeq":[0],
         "no-var": "error",
-        "require-await": "error"
-    }
+        "no-param-reassign": "off",
+        "react/forbid-prop-types": "off",
+        "react/jsx-no-duplicate-props":"off",
+        "react/self-closing-comp":"off",
+        "eol-last":"off",
+        "import/prefer-default-export":"off",
+        "no-else-return":"off",
+        "padded-blocks":"off",
+        "arrow-body-style":"off",
+        "no-multi-assign":"off",
+        "require-await": "error",
+        "jsx-a11y/label-has-associated-control": [ "error", {
+            "required": {
+              "some": [ "nesting", "id"  ]
+            }
+          }],
+          "jsx-a11y/label-has-for": [ "error", {
+            "required": {
+              "some": [ "nesting", "id"  ]
+            }
+          }]
+        
+        }
+        
 
 }

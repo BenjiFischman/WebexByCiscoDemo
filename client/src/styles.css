@@ -1,4 +1,30 @@
 
 :root {
-  background-color: teal;
+  background-color: #005072;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.Container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Content {
+  color: whitesmoke;
+}
+
+.CiscoRed {
+  color: #c5112e;
+}
+
+.Apple {
+  color: #6ebe4a;
+}
+
+.Cyan {
+  color: #00bceb;
 }
