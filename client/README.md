@@ -33,6 +33,8 @@ To be sure, [react-widgets](https://github.com/webex/react-widgets) and spaces a
 * Step 3) npm run dev (local dev run time)
 
 [LIVE DEMO!](https://webexbyciscodemo.pages.dev/)
+
+[CloudFlare Deploy Docs](https://developers.cloudflare.com/pages/)
 ## Next Steps & Future Work
 
 An open internet, in reason, is non negotiable, and as everyone learns to work in play in a remote context delivering unprecedented value is top of mind. With respect to prioritization of new features and content for future work here are the principles that will help guide us:
