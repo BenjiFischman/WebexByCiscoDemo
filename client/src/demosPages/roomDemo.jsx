@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Input from '../components/Input';
-import Room from '../components/Room';
+import Input from '../components/input';
+import Room from '../components/room';
 
 const RoomDemo = ({webex}) => {
 
