@@ -2,7 +2,7 @@
 const { EnvironmentPlugin } = require("webpack");
 
 module.exports =  {
-    //let them folks know we mean bussiness
+    //let them folks know we mean business
     mode: 'production',
     module: {
         //this comes later

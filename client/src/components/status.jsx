@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 
 /**
- * Update the UI state without forcing a rerender, mapState to props example
+ * Update the UI state without forcing a re-render, mapState to props example
  *@param {props} props isOnline bool status of auth
  * @returns {html} Status that indicates auth state
  */

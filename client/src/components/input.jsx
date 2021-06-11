@@ -7,7 +7,7 @@ import {useDispatch} from 'react-redux';
  * @returns {html}
  */
 const Input = () => {
-  // Example of redux on change handler instead of state to avoid rerender.
+  // Example of redux on change handler instead of state to avoid re-render.
   const dispatch = useDispatch();
 
   /**
@@ -39,7 +39,7 @@ const Input = () => {
       <br />
       <label id="email" htmlFor="guests">Guest Emails </label>
       <br />
-      <label id="comma" htmlFor="guests">(comma seperated):</label>
+      <label id="comma" htmlFor="guests">(comma separated):</label>
       <input
         type="text"
         id="guests"
