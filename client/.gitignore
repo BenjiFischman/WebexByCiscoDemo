@@ -7,6 +7,9 @@ package-lock.json
 
 .example.env
 
+#WIP server
+../server/
+
 #build/dist folder
 dist
 

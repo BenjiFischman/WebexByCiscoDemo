@@ -1,7 +1,7 @@
 # Webex by Cisco Showcase
 
 ## Orientation
-Hello World, welcome to a repo meant to inspire innovators to collaberate!
+Hello World, welcome to a repo meant to inspire innovators to collaborate!
 
 As of **6/10/2021** the client folder is operational, deployable, and fully documented.
 
@@ -15,4 +15,4 @@ Give the demo a try!
 | File/folder       | Description                                        |
 |-------------------|----------------------------------------------------|
 | `client`           | Deployable Demo Single Page Application |
-| `server`  | Err, coming soon, Cloudflare serverless worker example |
+| `server`  | Coming soon, Cloudflare serverless worker example |

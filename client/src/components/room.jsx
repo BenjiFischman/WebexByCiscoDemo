@@ -55,7 +55,7 @@ const Room = ({webex}) => {
   return (
     <div>
       <Button ariaLabel="Create Room" onClick={handleRoom}>
-        Create Rooms
+        Create Room
       </Button>
     </div>
   );

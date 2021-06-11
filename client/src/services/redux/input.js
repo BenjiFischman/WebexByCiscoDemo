@@ -17,8 +17,8 @@ export const InputReducer = createReducer(
       action /* eslint-disable-line no-unused-vars */
     ) => {
       const temp = action.emails.split(',').map((email) => {
-            email = email.trimStart();
-            email = email.trimEnd();
+        email = email.trimStart();
+        email = email.trimEnd();
         if (validateEmail(email)) {
           return email;
         }
