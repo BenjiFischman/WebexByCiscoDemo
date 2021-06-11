@@ -38,6 +38,10 @@ const Auth = ({webex}) => {
     }
     else {
       // No user is authenticated
+      // Update the state b/c the user did not complete the sign in.
+      // eslint-disable-next-line
+      // TODO: leverage local storage
+      dispatch({type: 'LOG_ON', Auth: false});
       // eslint-disable-next-line
       alert('Cannot logout when no user is authenticated');
     }

@@ -8,7 +8,8 @@ import Home from './sections/home';
 import RoomDemo from './demosPages/roomDemo';
 
 /* eslint-disable */
-interface webex {
+//Example of inline typing a global CDN package 
+type webex = {
   webex: any;
 }
 

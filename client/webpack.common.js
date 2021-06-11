@@ -8,16 +8,10 @@ module.exports = {
     resolve: {
     //All flavors are welcome!
       extensions: [".tsx", ".ts", ".js",".jsx", ""],
-      //Client Side Browser App with PWA functionality in mind for future work, so lets not assume much 
+      //Client Side Browser App with future PWA functionality in mind, so lets not assume much 
       fallback: {
         "fs": false,
-        "path": false,
-        //Webex dependencies
-        "util": require.resolve("util"),
-        "stream": require.resolve("stream-browserify"),
-        "os": require.resolve("os-browserify/browser"),
-        "crypto": require.resolve("crypto-browserify"),
-        "window.webex": require.resolve("webex")
+        "path": false
     }},
     module: {
         rules: [
@@ -74,9 +68,6 @@ module.exports = {
         ],
       }
 ,
-externals: {
-  webex: 'webex'
-},
 plugins: [
     //Clean builds all day every day
     new CleanWebpackPlugin(),
