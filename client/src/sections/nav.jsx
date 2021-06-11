@@ -2,8 +2,8 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import Auth from '../components/Auth';
-import Status from '../components/Status';
+import Auth from '../components/auth';
+import Status from '../components/status';
 
 const Navbar = ({webex}) => {
   return (
