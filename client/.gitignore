@@ -1,11 +1,9 @@
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-# Narrator: no
+# Narrator: please do note check in node_modules
 client/node_modules
 node_modules
 package-lock.json
-
-.example.env
 
 #WIP server
 ../server/

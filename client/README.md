@@ -27,14 +27,28 @@ To be sure, [react-widgets](https://github.com/webex/react-widgets) and spaces a
 * Protect yo secrets with example env configuration!
 
 
-### Try it Out!
+### Setup & Config
+* Step 0) Create a [Webex integration](https://developer.webex.com/docs/integrations)
+    * Request 'spark:all' permissions for the scope 
 * Step 1) Navigate to the root of the client folder
-* Step 2) npm install
-* Step 3) npm run dev (local dev run time)
+* Update the .example.env as appropriate
+* Step 2)  `npm install`
+* Step 3) `npm run dev` (local dev run time)
+
+Navigate to localhost:8080 and have *fun*! 
 
 [LIVE DEMO!](https://webexbyciscodemo.pages.dev/)
 
-[CloudFlare Deploy Docs](https://developers.cloudflare.com/pages/)
+
+### Deploy
+* (*Cloudflare*) Choose a hosting service... E.g., [Cloudflare Pages](https://developers.cloudflare.com/pages/),  [GitHub Pages](https://pages.github.com/), etc. 
+* (*Github Actions*) Choose a CI/CD tool ... E.g., [Github Actions](https://docs.github.com/en/actions) , [Travis](https://docs.travis-ci.com/user/customizing-the-build/), etc.
+* Update [`.github`](https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions) with your preferred deploy configuration. This repo tries to re-deploy to Cloudflare each time a push to main occurs.
+    * [Recommended reading: Github Actions and Events](https://docs.github.com/en/actions/reference/events-that-trigger-workflows)  
+* Update the service providers secret vault to match `webpack.prod.js`.
+    * Minimum requirement is to handle:
+` WEBEX_CLIENT_ID: "unknown",
+            `
 ## Next Steps & Future Work
 
 An open internet, in reason, is non negotiable, and as everyone learns to work in play in a remote context delivering unprecedented value is top of mind. With respect to prioritization of new features and content for future work here are the principles that will help guide us:
@@ -48,9 +62,15 @@ An open internet, in reason, is non negotiable, and as everyone learns to work i
 
 
 ### Backlog for this particular repo:
-* Add a home landing page and navigation menu [X].
+- [x] ~~Add a home landing page and navigation menu.~~
 * Maybe land this example on the [awesome list](https://github.com/CiscoDevNet/awesome-webex), pending stakeholder feedback... 
 * Add a Spaces chat to the Room functionality and continue the conversation.
 * Leverage the work of others from widgets swimlane to add additional experiences.
 * Build an example with a serverless proxy to manage and load balance.
-* Integrate Jest or another testing framework. 
+* Integrate Jest or another testing framework.
+
+
+## Contributing
+
+Keep it casual for now, please fork the repo, create a feature branch and tag the original author and maintainer for a review.
+

@@ -26,6 +26,13 @@ const webex = window.Webex.init({
       level: 'debug'
     },
     credentials: {
+      /* Create your own webex integration credentials: https://developer.webex.com/docs/integrations
+      To create an your own integration checkout out the above docs.
+      Configure this variable in a prod deployment by using a secret store.
+      Webpack.prod.js will inject the variable at run time, otherwise add the variable in your local .env
+      For learning purposes, consider .example.env and webpack.dev.js for local config.
+      Note to devs, I have a different client Id configure in the deployed instance.
+      */
       client_id: process.env.WEBEX_CLIENT_ID,
       redirect_uri: redirectUri,
       scope: 'spark:all spark:kms'
